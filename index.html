@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="favicon.png">
+
+    <title>HANGMAN</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+
+    <div>
+
+      <h1 class="titulo">Juguemos a adivinar palabras del mundo tecnologico</h1>
+      <button class="btn1" id="iniciar-juego" onclick="location.href='#section-juego';">
+        Iniciar Juego
+      </button>
+    </div>
+
+    <div>
+      <input class="text-input" type="text" id="input-nueva-palabra"placeholder="Escriba una nueva palabra"
+      />
+      <button class="btn2" id="nueva-palabra" onclick="agregarPalabras();">
+        Agregar Palabra
+      </button>
+    </div>
+
+
+    <section id="section-juego">
+      <form id="formulario" action="" onClick="evitarRecarga(event)" autocomplete="off">
+      <input maxlength="1" class="text-input" type="text" name="input-texto" id="input-texto" placeholder="Escriba una letra" onKeyUp="compararLetra();">
+
+        <label class="aviso">SOLO SE PERMITEN LETRAS MAYUSCULAS</label>
+        <br>
+
+
+        <input class="btn3" type="submit" value="Jugar de nuevo" id="btn" onClick="jugardeNuevo();"/>
+
+        <div id="canvas">
+          <canvas width="500" height="350"></canvas>
+        </div>
+
+        <h2 value="">Palabra Secreta:</h2>
+        <h2 id="palabraSecreta" value=""></h2>
+        <h2 id="restantes" value="">Intentos restantes:</h2>
+        <h2 id="cantdeIntentos" name="name" value=""></h2>
+        <h2 id="letrasElegidas" value="">Letras elegidas:</h2>
+      </form>
+    </section>
+
+    <script src="ahorcado.js"></script>
+    <script src="agregarPalabra.js"></script>
+    <script src="dibujarAhorcado.js"></script>
+    <script> elegirPalabra(); </script>
+    <script>dibujar();</script>
+
+    <footer>
+        Todos los derechos reservados | &copy; <em id="date"></em>Adrian Miguel Encarnacion Mendez
+        </footer>
+
+            <div id="iconos" class="col-xs-12">
+                
+                    <a href="https://github.com/AdrianEnc01"><img src="icons8-github-48.png" class="icono-social"></a>
+                    <a href="https://www.linkedin.com/in/adrian-miguel-encarnacion-mendez-web-dev"><img src="icons8-linkedin-48.png" class="icono-social"></a>
+                    <a href="https://twitter.com/adrianenc04"><img src="icons8-twitter-48.png" class="icono-social"></a>
+                
+            </div>
+  </body>
+</html>

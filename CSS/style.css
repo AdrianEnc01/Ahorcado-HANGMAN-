@@ -1,0 +1,106 @@
+    body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      background-color:  #0c8f33ef;
+      width: 90%;
+      margin: auto;
+      text-align: center;
+    }
+     
+    .titulo {
+      font-size: 19px;
+      padding: 10px;
+      width: 80vw;
+      margin: auto;
+      color: black;
+    }
+
+    .aviso{
+      font-size: 19px;
+      padding: 20px;
+      width: 80vw;
+      margin: auto;
+      color: black;
+    }
+  
+    .btn1 {
+      border: 0;
+      color: white;
+      font-weight: bold;
+      background-color: #034918ea;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      border-radius: 0.5em;
+    }
+    .btn2 {
+        border: 0;
+        color: white;
+        font-weight: bold;
+        background-color:#034918ea;
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-radius: 0.5em;
+      }
+      .btn3 {
+        border: 0;
+        color: white;
+        font-weight: bold;
+        background-color: #0c8f33ef;
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-radius: 0.5em;
+      }
+  
+    .btn:active {
+      transform: translateY(4px);
+    }
+  
+    .text-input {
+      font-size: 12px;
+      border-radius: 0.5em;
+      border: 1px solid rgb(255, 254, 254);
+      display: block;
+      padding: 0.5em;
+      width: 20%;
+      height: 80px;
+      margin-top: 0.5rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    #cantdeIntentosVerde {
+      color: rgb(116, 167, 39);
+      font-size: 25px;
+    }
+  
+    #cantdeIntentosRojo {
+      color: red;
+      font-size: 25px;
+    }
+  
+    #section-juego {
+      background-color: #034918ea;
+      font-size: 14px;
+      margin: auto;
+      width: 95%;
+      margin-top: 0.5rem;
+    }
+  
+    canvas {
+      display: block;
+      margin: auto;
+      width: 50%;
+      height: auto;
+    }
+
+    footer {
+        color: black;
+        display: flex;
+        justify-content: center;
+        margin-top: 15vh;
+        margin-bottom: 30px;
+        width: 100%;
+        font-weight: bold
+      }
